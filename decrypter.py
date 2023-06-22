@@ -18,7 +18,7 @@ def decrypt_file(key, input_file, output_file):
 
 if __name__ == '__main__':
     decryption_key = get_random_bytes(16)  # Chave de descriptografia de 16 bytes (128 bits)
-    directory = '/home/kali/projeto-ransonware/'  # Diretório que contém os arquivos criptografados
+    directory = '/home/kali/projeto-ransomware/'  # Diretório que contém os arquivos criptografados
 
     for filename in os.listdir(directory):
         if filename.endswith('_criptografado.txt'):
